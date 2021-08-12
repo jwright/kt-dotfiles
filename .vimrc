@@ -245,7 +245,7 @@ if has("autocmd")
   au BufNewFile,BufRead *.ejs set filetype=jst
   au BufNewFile,BufRead *.json set filetype=json syntax=javascript
   au BufNewFile,BufRead *.md set filetype=markdown
-  au BufNewFile,BufRead Podfile,Vagrantfile set filetype=ruby
+  au BufNewFile,BufRead Podfile,Vagrantfile,Fastfile set filetype=ruby
   au BufNewFile,BufRead Makefile,.git*,.git/* set noexpandtab
   au BufNewFile,BufRead Gruntfile set filetype=javascript
 
