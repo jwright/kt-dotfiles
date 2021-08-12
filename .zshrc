@@ -29,9 +29,24 @@ export PATH=$PATH:/usr/local/Cellar/go/1.2/libexec/bin
 # Add fucking PHP Composer
 export PATH=$HOME/.composer/vendor/bin:$PATH
 
+# OpenSSL
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
 # Configure chruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/jwright/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Configure asdf
+source /usr/local/opt/asdf/asdf.sh
 
 # Setup web
 export PORT=5000
@@ -64,6 +79,9 @@ alias bloat='du -k | sort -nr | more'
 
 # Bundle Exec
 alias be="bundle exec"
+
+# bin/rails
+alias br="bin/rails"
 
 # Git
 alias g='git status -s'
@@ -156,7 +174,7 @@ autoload -U colors && colors
 setopt prompt_subst
 
 # Set default ruby
-chruby 2.5
+chruby 2.7.2
 
 # Display Virtualenv cleanly in right column
 function virtualenv_info {
@@ -189,6 +207,18 @@ RPROMPT='%{$fg[cyan]%}$(virtualenv_info)%{$fg[white]%}$(ruby_info)$(prompt_char)
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### Gigalixir
+export PATH=~/.local/bin:$PATH
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+eval "$(direnv hook zsh)"
