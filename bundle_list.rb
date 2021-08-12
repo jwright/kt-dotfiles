@@ -16,6 +16,7 @@ $git_bundles = [
   "https://github.com/kien/ctrlp.vim.git", # Fuzzy file finder
   "https://github.com/Shutnik/jshint2.vim.git", # JSHint integration
   "https://github.com/Raimondi/delimitMate.git", # Auto-completion of "'[{()}]'"
+  "https://github.com/benizi/vim-automkdir", # Automatically create directories
 
   # Syntax highlighting
   "https://github.com/tpope/vim-markdown.git",
