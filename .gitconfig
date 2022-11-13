@@ -39,6 +39,7 @@
 	helper = osxkeychain
 [init]
 	templatedir = /Users/jwright/.git-templates
+	defaultBranch = main
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
