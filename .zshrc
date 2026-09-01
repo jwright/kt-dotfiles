@@ -103,7 +103,7 @@ export REDIS_PORT=6379
 ###########
 
 # Dotfiles
-alias dot='cd ~/projects/dotfiles'
+alias dot='cd ~/Projects/kt-dotfiles'
 
 # Brew casks
 alias casks='open /opt/homebrew-cask/Caskroom'
