@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 " Running test files
 
-Plug 'janko-m/vim-test'
+Plug 'vim-test/vim-test'
 
 " Elixir  formatting
 
