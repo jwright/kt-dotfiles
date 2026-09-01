@@ -51,3 +51,5 @@ Thumbs.db
 # POW #
 #######
 .powrc
+
+**/.claude/settings.local.json
