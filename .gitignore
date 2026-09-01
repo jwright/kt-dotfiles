@@ -6,3 +6,5 @@
 .vim/colors
 .vim/plugged
 .rbenv-version
+.vim/pack
+.vim/view
